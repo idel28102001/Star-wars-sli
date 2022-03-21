@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["prettier", "eslint:recommended", "plugin:node/recommended"],
+  "env": {
+    "node": true,
+    "jest/globals": true,
+    "es6": true
+  },
+  "plugins": ["prettier", "jest"],
+  "rules": {
+    "no-process-exit": 0,
+    "node/no-extraneous-require": [
+      "error",
+      {
+        "allowModules": [],
+        "resolvePaths": [],
+        "tryExtensions": []
+      }
+    ]
+  },
+  "settings": {}
+}
